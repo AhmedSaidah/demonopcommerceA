@@ -1,5 +1,6 @@
 package org.example.Pages;
 
+import io.cucumber.messages.types.Hook;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -84,6 +85,68 @@ public P03_homepage()
       public WebElement PageTitle()
       {
           return Hooks.driver.findElement(By.cssSelector(".page-title"));
+      }
+
+      public WebElement FirstTab ()
+      {
+
+          return Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[1]/div[1]/a[1]"));
+
+      }
+
+      public WebElement SecondTab()
+      {
+          return Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[1]/div[1]/a[2]"));
+      }
+
+      public WebElement Facebookicon()
+      {
+
+          return Hooks.driver.findElement(By.cssSelector("a[href=\"http://www.facebook.com/nopCommerce\"]"));
+      }
+
+      public WebElement FacebookNewTab()
+      {
+          return Hooks.driver.findElement(By.linkText("https://www.facebook.com/nopCommerce"));
+      }
+
+      public WebElement Twittericon()
+      {
+          return Hooks.driver.findElement(By.cssSelector("a[href=\"https://twitter.com/nopCommerce\"]"));
+      }
+
+      public WebElement Rssicon()
+      {
+          return Hooks.driver.findElement(By.cssSelector("a[href=\"/news/rss/1\"]"));
+
+      }
+
+      public WebElement TubeIcon()
+      {
+          return Hooks.driver.findElement(By.cssSelector("a[href=\"http://www.youtube.com/user/nopCommerce\"]"));
+      }
+
+      public WebElement WishlistButton()
+      {
+          return Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[4]/div[2]/div[3]/div/div[2]/div[3]/div[2]/button[3]"));
+      }
+
+      public WebElement SuccessMsgGreen()
+      {
+          return Hooks.driver.findElement(By.xpath("/html/body/div[5]/div"));
+      }
+      public WebElement xbutton()
+      {
+          return Hooks.driver.findElement(By.cssSelector("#bar-notification > div > span"));
+      }
+      public WebElement WishListElement()
+      {
+          return Hooks.driver.findElement(By.cssSelector("a[href=\"/wishlist\"]"));
+      }
+
+      public WebElement QtyValue ()
+      {
+          return Hooks.driver.findElement(By.cssSelector(".qty-input"));
       }
 
 
